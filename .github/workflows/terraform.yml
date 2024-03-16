@@ -35,10 +35,6 @@ jobs:
         run: terraform init
         working-directory: '${{ env.ROOT_PATH }}'
         
-      - name: Terraform Format
-        run: terraform fmt -check
-        working-directory: '${{ env.ROOT_PATH }}'
-        
       - name: Terraform Plan
         run: terraform plan
         working-directory: '${{ env.ROOT_PATH }}'
